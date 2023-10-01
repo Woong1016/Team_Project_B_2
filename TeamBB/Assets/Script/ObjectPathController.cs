@@ -4,16 +4,14 @@ using System.Collections.Generic;
 public class ObjectPathController : MonoBehaviour
 {
     public PathManager PathManager; // PathManager 스크립트를 가진 게임 오브젝트를 Inspector 창에서 연결하세요.
-    public int selectedPathNumber = 1; // Inspector 창에서 선택할 경로 번호를 설정하세요.
-
     private List<Vector3> currentPath;
     private int currentWaypointIndex = 0;
-    private float movementSpeed = 20.0f; // 움직임 속도 설정
+    private float movementSpeed = 50.0f; // 움직임 속도 설정
 
     private void Start()
     {
-        // 선택한 경로 번호에 따라 PathManager에서 해당 경로를 가져옵니다.
-        currentPath = PathManager.GetPath(selectedPathNumber);
+        // PathManager에서 무작위 경로를 가져옵니다.
+        currentPath = PathManager.GetRandomPath();
 
         if (currentPath != null && currentPath.Count > 0)
         {
@@ -40,8 +38,10 @@ public class ObjectPathController : MonoBehaviour
             currentWaypointIndex++;
             if (currentWaypointIndex >= currentPath.Count)
             {
-                // 경로 끝에 도달한 경우 웨이포인트 인덱스를 초기화합니다.
+                // 경로 끝에 도달한 경우 웨이포인트 인덱스를 초기화하고 움직임을 멈춥니다.
                 currentWaypointIndex = 0;
+                // 움직임을 멈추려면 아래 라인을 주석 해제하세요.
+               movementSpeed = 0.0f;
             }
         }
     }
