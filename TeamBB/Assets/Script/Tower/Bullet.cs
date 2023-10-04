@@ -4,31 +4,32 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public Vector3 launchDirection; // 발사 방향 벡터
-    public float bulletSpeed = 30f; // 탄환 속도
+    public Vector3 launchDirection; // 발사 방향 벡터 선언
+    public float bulletSpeed = 10f; // 탄환 속도
 
     private void Start()
     {
-        // 탄환에 속도 설정
         Rigidbody bulletRigidbody = GetComponent<Rigidbody>();
         bulletRigidbody.velocity = launchDirection * bulletSpeed;
     }
 
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.CompareTag("Wall") || other.CompareTag("Floor"))
         {
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            Debug.Log("충돌: " + other.gameObject.name);
+
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Enemy"))
+        {
+            Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(10f); 
+                enemy.TakeDamage(10f);
             }
 
             Destroy(gameObject);
         }
     }
 }
-
-
-
