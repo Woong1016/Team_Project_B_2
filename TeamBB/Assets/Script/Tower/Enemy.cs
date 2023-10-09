@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     public float maxHealth = 50f; // 적의 최대 체력
     private float currentHealth;   // 현재 체력
 
+    public int moneyValue = 10;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -22,8 +24,10 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Die()
-    {   
+    public void Die()
+    {
+        GameManager.instance.MoneyIncrease(moneyValue);
+
         Destroy(gameObject);
     }
 }
