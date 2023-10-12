@@ -32,6 +32,6 @@ public class GameManager : MonoBehaviour
 
     private void ShowInfo()
     {
-        moneyText.text = "Money: " + money;
+        moneyText.text = " " + money;
     }
 }
