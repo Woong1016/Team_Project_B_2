@@ -15,7 +15,7 @@ public class ObjectPathController : MonoBehaviour
 
         if (currentPath != null && currentPath.Count > 0)
         {
-            // 초기 위치를 첫 번째 웨이포인트로 설정합니다.
+            // 초기 위치를 첫 번째 웨이포인트로 설정
             transform.position = currentPath[0];
         }
     }
