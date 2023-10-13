@@ -27,19 +27,19 @@ public class UIManager : MonoBehaviour
 
     public void ShopButton_Clicked()
     {
-        Shop_UnitShopPanel.SetActive(true);
+        Shop_UnitShopPanel.SetActive(true);         //상점과 유닛 구매 버튼이 있는 패널 활성화
         isShopPanelActive = true; 
     }
 
     public void UnitShopButton_Clicked()
     {
-        UnitShopPanel.SetActive(true);
+        UnitShopPanel.SetActive(true);              //유닛 구매 버튼이 있는 패널 활성화
         isShopPanelActive = true; 
     }
 
     public void Shop_Button_Clicked()
     {
-        ShopPanel.SetActive(true);
+        ShopPanel.SetActive(true);                  //상점 패널 활성화
         isShopPanelActive = true; 
     }
 
