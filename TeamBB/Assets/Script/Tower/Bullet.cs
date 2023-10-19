@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
 
             Destroy(gameObject);
         }
-        else if (other.CompareTag("Enemy"))
+        else if (other.CompareTag("SpawnedObject"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)

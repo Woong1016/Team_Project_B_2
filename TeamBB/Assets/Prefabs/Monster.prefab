@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PathManager: {fileID: 8870946875793768991}
+  movementSpeed: 10
 --- !u!114 &8870946876078452573
 MonoBehaviour:
   m_ObjectHideFlags: 0

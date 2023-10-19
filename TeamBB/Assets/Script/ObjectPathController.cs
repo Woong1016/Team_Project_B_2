@@ -6,7 +6,7 @@ public class ObjectPathController : MonoBehaviour
     public PathManager PathManager; // PathManager 스크립트를 가진 게임 오브젝트를 Inspector 창에서 연결하세요.
     private List<Vector3> currentPath;
     private int currentWaypointIndex = 0;
-    private float movementSpeed = 50.0f; // 움직임 속도 설정
+    public float movementSpeed = 7.0f; // 움직임 속도 설정
 
     private void Start()
     {
