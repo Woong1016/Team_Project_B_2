@@ -37,7 +37,7 @@ public class PathManager : MonoBehaviour
     public List<Vector3> path14; // 동선 14
 
 
-    
+    // 다른 동선을 필요에 따라 추가할 수 있습니다.
 
     public List<Vector3> GetPath(int pathNumber)
     {
@@ -83,7 +83,7 @@ public class PathManager : MonoBehaviour
 
 
 
-    void Awake()
+    void Start()
     {
         // 동선 초기화
         path1 = new List<Vector3>
