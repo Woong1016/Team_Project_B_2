@@ -31,17 +31,33 @@ public class UIManager : MonoBehaviour
         isShopPanelActive = true; 
     }
 
+    public void Shop_Button_Clicked()
+    {
+        ShopPanel.SetActive(true);                  //상점 패널 활성화
+        isShopPanelActive = true;
+    }
+
     public void UnitShopButton_Clicked()
     {
         UnitShopPanel.SetActive(true);              //유닛 구매 버튼이 있는 패널 활성화
         isShopPanelActive = true; 
     }
 
-    public void Shop_Button_Clicked()
+    public void Close_Button()
     {
-        ShopPanel.SetActive(true);                  //상점 패널 활성화
-        isShopPanelActive = true; 
+        Shop_UnitShopPanel.SetActive(false);
     }
+
+    public void ShopPanel_Close_Button()
+    {
+        ShopPanel.SetActive(false);
+    }
+
+    public void UnitShop_Close_Button()
+    {
+        UnitShopPanel.SetActive(false);
+    }
+
 
     void CloseShopPanelOnOutsideClick()
     {
