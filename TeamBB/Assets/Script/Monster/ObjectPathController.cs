@@ -41,7 +41,7 @@ public class ObjectPathController : MonoBehaviour
                 // 경로 끝에 도달한 경우 웨이포인트 인덱스를 초기화하고 움직임을 멈춥니다.
                 currentWaypointIndex = 0;
                 // 움직임을 멈추려면 아래 라인을 주석 해제하세요.
-               movementSpeed = 0.0f;
+                movementSpeed = 0.0f;
             }
         }
     }
