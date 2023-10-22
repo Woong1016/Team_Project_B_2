@@ -10,6 +10,8 @@ public class Tower : MonoBehaviour
     public Transform gunTransform;  // 포탑의 총구 위치
     public float attackRange = 10f; // 포탑의 공격 사거리
     public float rotationSpeed = 10f; // 포탑의 회전 속도
+    public float baseDamage = 10f;   // 초기 공격력
+    public float baseAttackSpeed = 1.0f; // 초기 공격 속도
     private float nextFireTime;     // 다음 발사 시간
     private Transform target;       // 현재 공격 대상
 
@@ -69,13 +71,18 @@ public class Tower : MonoBehaviour
 
         if (bulletScript != null)
         {
-            // 총구의 방향을 Y 축 180도 회전
+            bulletScript.damage = baseDamage; // 총알의 공격력 설정
             Quaternion rotatedRotation = gunTransform.rotation * Quaternion.Euler(0f, 180f, 0f);
-
-            // 탄환의 방향을 총구의 회전 방향으로 설정
-            bulletScript.launchDirection = rotatedRotation * Vector3.forward; // 회전된 방향을 곱하여 설정
+            bulletScript.launchDirection = rotatedRotation * Vector3.forward;
             bulletScript.bulletSpeed = bulletSpeed;
         }
     }
 
+    public void UpdateAttackInfo(float newDamage, float newAttackSpeed)
+    {
+        // 공격력 및 공격 속도 업데이트
+        baseDamage = newDamage;
+        baseAttackSpeed = newAttackSpeed;
+        fireRate = newAttackSpeed; // 발사 속도를 공격 속도와 동일하게 설정
+    }
 }
