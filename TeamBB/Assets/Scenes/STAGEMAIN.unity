@@ -1661,6 +1661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2107084613}
+  - component: {fileID: 2107084618}
   - component: {fileID: 2107084617}
   - component: {fileID: 2107084615}
   - component: {fileID: 2107084614}
@@ -1735,8 +1736,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoStage1, Assembly-CSharp
+      - m_Target: {fileID: 2107084618}
+        m_TargetAssemblyTypeName: GOCUTSCENE1, Assembly-CSharp
         m_MethodName: LoadStageMain
         m_Mode: 1
         m_Arguments:
@@ -1785,6 +1786,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107084612}
   m_CullTransparentMesh: 1
+--- !u!114 &2107084618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107084612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745a4fa07deea2b46b314dd23e77ab2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2112353691
 GameObject:
   m_ObjectHideFlags: 0
