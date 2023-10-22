@@ -29,6 +29,9 @@ public class ObjectPathController : MonoBehaviour
         Vector3 targetPosition = currentPath[currentWaypointIndex];
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
 
+        // 웨이포인트를 바라보도록 회전
+        transform.LookAt(targetPosition);
+
         // 현재 위치와 목표 위치 간의 거리를 계산합니다.
         float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
 
