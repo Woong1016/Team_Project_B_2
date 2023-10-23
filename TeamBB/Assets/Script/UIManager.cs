@@ -99,7 +99,8 @@ public class UIManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        attackDamageText.text = "공격력: " + GameManager.instance.GetAttackDamage() + " (강화 비용: " + GameManager.instance.GetAttackDamageUpgradeCost() + ")";
-        attackSpeedText.text = "공격 속도: " + GameManager.instance.GetAttackSpeed().ToString("F1") + " (강화 비용: " + GameManager.instance.GetAttackSpeedUpgradeCost() + ")";
+        attackDamageText.text = "공격력: " + GameManager.instance.GetAttackDamage() + "\n(강화 비용: " + GameManager.instance.GetAttackDamageUpgradeCost() + ")";
+
+        attackSpeedText.text = "공격 속도: " + GameManager.instance.GetAttackSpeed().ToString("F1") + "\n(강화 비용: " + GameManager.instance.GetAttackSpeedUpgradeCost() + ")";
     }
 }
