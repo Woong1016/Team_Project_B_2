@@ -13,13 +13,19 @@ public class MonsterSpawner : MonoBehaviour
 
     public List<RoundInfo> rounds = new List<RoundInfo>();
 
-    private int currentRound = 0;
+    private int currentRound = -1;
     private int objectsSpawned = 0;
     private float nextSpawnTime = 0.0f;
+    private bool allRoundsSpawned = false;
+
+    void Start()
+    {
+        NextRound();
+    }
 
     void Update()
     {
-        if (currentRound < rounds.Count)
+        if (!allRoundsSpawned)
         {
             if (Time.time >= nextSpawnTime)
             {
@@ -37,11 +43,24 @@ public class MonsterSpawner : MonoBehaviour
                     GameObject[] spawnedObjects = GameObject.FindGameObjectsWithTag("SpawnedObject");
                     if (spawnedObjects.Length == 0)
                     {
-                        currentRound++;
-                        objectsSpawned = 0;
+                        NextRound();
                     }
                 }
             }
+        }
+    }
+
+    private void NextRound()
+    {
+        currentRound++;
+        if (currentRound < rounds.Count)
+        {
+            objectsSpawned = 0;
+            nextSpawnTime = Time.time + rounds[currentRound].timeBetweenSpawns;
+        }
+        else
+        {
+            allRoundsSpawned = true;
         }
     }
 
@@ -54,7 +73,7 @@ public class MonsterSpawner : MonoBehaviour
             Quaternion spawnRotation = Quaternion.identity; // 원하는 방향으로 변경
 
             GameObject spawnedObject = Instantiate(objectPrefab, spawnPosition, spawnRotation);
-            spawnedObject.tag = "SpawnedObject"; // 스폰된 오브젝트에 태그 할당
+            spawnedObject.tag = "SpawnedObject"; // 스포닌된 오브젝트에 태그 할당
         }
     }
 }
