@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Transform Ing;
     public float maxHealth = 50f; // 적의 최대 체력
     private float currentHealth;   // 현재 체력
 
@@ -11,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        Ing = gameObject.transform.parent;
         currentHealth = maxHealth;
     }
 
@@ -28,6 +30,8 @@ public class Enemy : MonoBehaviour
     {
         GameManager.instance.MoneyIncrease(moneyValue);
 
+        Destroy(Ing.gameObject);
         Destroy(gameObject);
+
     }
 }
