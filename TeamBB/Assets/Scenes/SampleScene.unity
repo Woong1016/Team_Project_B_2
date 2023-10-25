@@ -228,6 +228,8 @@ MonoBehaviour:
   gunTransform: {fileID: 1487591134}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &25667681
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1141,7 +1143,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1373269741}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &236029139
 PrefabInstance:
@@ -1248,6 +1250,8 @@ MonoBehaviour:
   gunTransform: {fileID: 1039847845}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &236029143
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2026,6 +2030,8 @@ MonoBehaviour:
   gunTransform: {fileID: 719547940}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &419018323
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2069,7 +2075,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2042293269}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &577320848
 GameObject:
@@ -2968,7 +2974,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 419018321}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &722737655
 GameObject:
@@ -3446,6 +3452,8 @@ MonoBehaviour:
   gunTransform: {fileID: 1512044040}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &922894365
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3816,6 +3824,8 @@ MonoBehaviour:
   Shop_UnitShopPanel: {fileID: 134049655}
   UnitShopPanel: {fileID: 955133364}
   ShopPanel: {fileID: 1521838808}
+  attackDamageText: {fileID: 0}
+  attackSpeedText: {fileID: 0}
 --- !u!1 &963619961
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,7 +4101,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 236029140}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098174174
 GameObject:
@@ -4122,7 +4132,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2129193043}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1124367812
 GameObject:
@@ -4734,6 +4744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 58435244}
+  money: 0
+  towers: []
 --- !u!4 &1239691454
 Transform:
   m_ObjectHideFlags: 0
@@ -4809,7 +4821,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1410177891}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373269740 stripped
 GameObject:
@@ -4839,6 +4851,8 @@ MonoBehaviour:
   gunTransform: {fileID: 205351252}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &1373269743
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4876,6 +4890,8 @@ MonoBehaviour:
   gunTransform: {fileID: 1288252552}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!4 &1410177891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c10ac896a9e10c749a908d812bcfe27e, type: 3}
@@ -5120,7 +5136,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 25667678}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1512044039
 GameObject:
@@ -5151,7 +5167,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 922894362}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521838808
 GameObject:
@@ -7174,6 +7190,8 @@ MonoBehaviour:
   gunTransform: {fileID: 2098021358}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &2007437746
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7317,6 +7335,8 @@ MonoBehaviour:
   gunTransform: {fileID: 450238126}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &2042293271
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7464,7 +7484,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2007437743}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2101220330
 GameObject:
@@ -7820,6 +7840,8 @@ MonoBehaviour:
   gunTransform: {fileID: 1098174175}
   attackRange: 20
   rotationSpeed: 300
+  baseDamage: 10
+  baseAttackSpeed: 1
 --- !u!136 &2129193046
 CapsuleCollider:
   m_ObjectHideFlags: 0
