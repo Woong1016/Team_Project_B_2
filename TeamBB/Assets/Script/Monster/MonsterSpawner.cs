@@ -1,6 +1,6 @@
-
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI; // UI 텍스트를 사용하기 위해 추가
 
 public class MonsterSpawner : MonoBehaviour
 {
@@ -13,6 +13,8 @@ public class MonsterSpawner : MonoBehaviour
     }
 
     public List<RoundInfo> rounds = new List<RoundInfo>();
+
+    public Text roundText; // UI Text 컴포넌트
 
     private int currentRound = -1;
     private int objectsSpawned = 0;
@@ -58,6 +60,9 @@ public class MonsterSpawner : MonoBehaviour
         {
             objectsSpawned = 0;
             nextSpawnTime = Time.time + rounds[currentRound].timeBetweenSpawns;
+
+            // 현재 라운드 텍스트 업데이트
+            roundText.text = " " + (currentRound + 1); // 라운드는 0부터 시작하므로 1을 더해서 표시
         }
         else
         {
