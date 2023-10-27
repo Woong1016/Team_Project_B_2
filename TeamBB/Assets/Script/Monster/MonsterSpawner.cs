@@ -66,7 +66,7 @@ public class MonsterSpawner : MonoBehaviour
         {
             objectsSpawned = 0;
             nextSpawnTime = Time.time + rounds[currentRound].timeBetweenSpawns;
-            roundText.text = "Round " + (currentRound + 1);
+            roundText.text = " " + (currentRound + 1);
         }
         else
         {

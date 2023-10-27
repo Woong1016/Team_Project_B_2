@@ -155,8 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38a3694b5604bab429a1a01452c9a2f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ing: {fileID: 0}
   maxHealth: 50
-  moneyValue: 10
+  moneyValue: 1000
 --- !u!1 &7771749166303625066
 GameObject:
   m_ObjectHideFlags: 0
