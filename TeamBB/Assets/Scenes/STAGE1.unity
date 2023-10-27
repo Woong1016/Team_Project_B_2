@@ -8561,35 +8561,16 @@ MonoBehaviour:
     objectsToSpawn:
     - {fileID: 0}
     - {fileID: 7771749166303625066, guid: cdb4592e360239c41b99eabd0ebe7545, type: 3}
-    - {fileID: 7771749166303625066, guid: cdb4592e360239c41b99eabd0ebe7545, type: 3}
-    - {fileID: 7771749166303625066, guid: cc4726e7cc027034484545b4dcc0dcd1, type: 3}
-    - {fileID: 7771749166303625066, guid: cc4726e7cc027034484545b4dcc0dcd1, type: 3}
-    - {fileID: 7771749166303625066, guid: cc4726e7cc027034484545b4dcc0dcd1, type: 3}
-    - {fileID: 7771749166303625066, guid: cc4726e7cc027034484545b4dcc0dcd1, type: 3}
-    timeBetweenSpawns: 2
-  - roundName: 
-    objectsToSpawn:
-    - {fileID: 0}
     - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
     - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
     - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
-    - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
-    - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
-    - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
-    timeBetweenSpawns: 2
-  - roundName: 
-    objectsToSpawn:
-    - {fileID: 0}
-    - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
-    - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
-    - {fileID: 4658269485254825909, guid: e2896fb74295b8e448df222eef36941f, type: 3}
-    - {fileID: 5734700347276373276, guid: af43b1677c58954498427bad1d81ce8f, type: 3}
     - {fileID: 5734700347276373276, guid: af43b1677c58954498427bad1d81ce8f, type: 3}
     - {fileID: 5734700347276373276, guid: af43b1677c58954498427bad1d81ce8f, type: 3}
     timeBetweenSpawns: 2
   - roundName: 
     objectsToSpawn:
     - {fileID: 0}
+    - {fileID: 5734700347276373276, guid: af43b1677c58954498427bad1d81ce8f, type: 3}
     - {fileID: 5734700347276373276, guid: af43b1677c58954498427bad1d81ce8f, type: 3}
     - {fileID: 5734700347276373276, guid: af43b1677c58954498427bad1d81ce8f, type: 3}
     - {fileID: 5734700347276373276, guid: af43b1677c58954498427bad1d81ce8f, type: 3}
