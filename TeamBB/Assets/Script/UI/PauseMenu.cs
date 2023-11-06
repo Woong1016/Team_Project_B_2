@@ -1,18 +1,18 @@
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+public class VolumeMenu : MonoBehaviour
 {
-    public GameObject StopWindow;
+    public GameObject VolumeWindow;
 
     public void OnClickstopbutton()
     {
         Time.timeScale = 0;
-        StopWindow.SetActive(true);
+        VolumeWindow.SetActive(true);
     }
 
     public void OnClickContiButtom()
     {
         Time.timeScale = 1;
-        StopWindow.SetActive(false);
+        VolumeWindow.SetActive(false);
     }
 }
