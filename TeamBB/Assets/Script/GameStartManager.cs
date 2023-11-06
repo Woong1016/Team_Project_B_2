@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameStartManager : MonoBehaviour
 {
-    public Text preStartText; // 게임 시작 전에 표시할 텍스트
-    public Text startText; // 게임 시작 시 표시할 텍스트
+    public TMP_Text preStartText; // 게임 시작 전에 표시할 텍스트
+    public TMP_Text startText; // 게임 시작 시 표시할 텍스트
 
     private bool gameStarted = false;
     private bool readyToStart = false;

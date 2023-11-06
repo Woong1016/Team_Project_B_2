@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class MonsterSpawner : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class MonsterSpawner : MonoBehaviour
     }
 
     public List<RoundInfo> rounds = new List<RoundInfo>();
-    public Text roundText;
+    public TMP_Text roundText;
     public GameObject clearScreen; // 클리어 화면 GameObject
 
     private int currentRound = -1;
