@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Floor
   - SpawnedObject
+  - "\uBD88\uB2ED"
   layers:
   - Default
   - TransparentFX
