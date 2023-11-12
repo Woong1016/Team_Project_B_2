@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 3657390489900451324}
   - component: {fileID: 2034955252538557524}
   - component: {fileID: 4188895464662941424}
-  - component: {fileID: -64395782605071698}
+  - component: {fileID: 7326343832815326120}
   m_Layer: 0
   m_Name: Test
-  m_TagString: Untagged
+  m_TagString: EvolutionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7522918835163781507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.0230541, y: 42.4, z: -95.2}
-  m_LocalScale: {x: 15.47968, y: 15.47968, z: 15.47968}
+  m_LocalScale: {x: 10.246591, y: 10.246591, z: 10.246591}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,8 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b458970b6638874e99ecc867e6b7cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
---- !u!54 &-64395782605071698
+--- !u!54 &7326343832815326120
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

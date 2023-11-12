@@ -9,7 +9,7 @@ public class ObjectController : MonoBehaviour
     public void SpawnObject()
     {
         // 원하는 위치에 오브젝트를 소환해봐.
-        Instantiate(objectToSpawn, new Vector3(0, 10, 0), Quaternion.identity);
+        Instantiate(objectToSpawn, new Vector3(15, 10, 56), Quaternion.identity);
     }
 
     

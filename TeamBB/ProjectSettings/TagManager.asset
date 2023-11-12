@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - SpawnedObject
   - "\uBD88\uB2ED"
+  - EvolutionObject
   layers:
   - Default
   - TransparentFX
