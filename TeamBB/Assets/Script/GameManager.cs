@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     private float attackSpeed = 1.0f;       // 초기 공격 속도
     private int attackSpeedUpgradeCost = 50; // 공격 속도 업그레이드 비용
 
-    private int fbUpgradeCost = 250;        //불닭 붕어빵 비용
+    private int fbUpgradeCost = 300;        //불닭 붕어빵 비용
 
     public List<Tower> towers; // 타워 스크립트 목록
 

@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ing: {fileID: 0}
-  maxHealth: 50
-  moneyValue: 1000
+  maxHealth: 100
+  moneyValue: 80
 --- !u!1 &7771749166303625066
 GameObject:
   m_ObjectHideFlags: 0
