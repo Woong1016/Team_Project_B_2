@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ing: {fileID: 0}
-  maxHealth: 1800
+  maxHealth: 2500
   moneyValue: 1000
 --- !u!114 &2002443635834651884
 MonoBehaviour:
