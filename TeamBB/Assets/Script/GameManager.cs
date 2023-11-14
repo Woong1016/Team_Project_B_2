@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     private float attackSpeed = 1.0f;       // 초기 공격 속도
     private int attackSpeedUpgradeCost = 50; // 공격 속도 업그레이드 비용
 
+    private int fbUpgradeCost = 250;        //불닭 붕어빵 비용
+
     public List<Tower> towers; // 타워 스크립트 목록
 
     private void Awake()
@@ -58,6 +60,11 @@ public class GameManager : MonoBehaviour
         return attackSpeedUpgradeCost <= money;
     }
 
+    public bool CanFBUpgrade()
+    {
+        return fbUpgradeCost <= money;
+    }
+
     public void DeductAttackDamageUpgradeCost()
     {
         money -= attackDamageUpgradeCost;
@@ -68,6 +75,12 @@ public class GameManager : MonoBehaviour
     {
         money -= attackSpeedUpgradeCost;
         attackSpeedUpgradeCost += 50; // 업그레이드 비용 증가
+    }
+
+    public void DeductFBUpgradeCost()
+    {
+        money -= fbUpgradeCost;
+        fbUpgradeCost += 50; // 업그레이드 비용 증가
     }
 
     private void ShowInfo()
@@ -121,5 +134,10 @@ public class GameManager : MonoBehaviour
     public int GetAttackSpeedUpgradeCost()
     {
         return attackSpeedUpgradeCost; // 공격 속도 업그레이드 비용 반환
+    }
+
+    public int GetFBUpgradeCost()
+    {
+        return fbUpgradeCost; // 공격 속도 업그레이드 비용 반환
     }
 }
