@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ing: {fileID: 0}
-  maxHealth: 400
+  maxHealth: 700
   moneyValue: 200
 --- !u!4 &910416559783557957 stripped
 Transform:

@@ -190,11 +190,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 5319556033415741160, guid: 18bd2086e52b6a245a03b43c61602cb6, type: 3}
-  bulletSpeed: 30
-  fireRate: 0.7
+  bulletSpeed: 40
+  fireRate: 1
   gunTransform: {fileID: 8142998820937374867}
-  attackRange: 30
+  attackRange: 20
   rotationSpeed: 300
-  baseDamage: 10
+  baseDamage: 20
   baseAttackSpeed: 1
   nextFireTime: 2
