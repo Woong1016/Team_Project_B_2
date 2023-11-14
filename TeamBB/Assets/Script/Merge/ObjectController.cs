@@ -9,8 +9,15 @@ public class ObjectController : MonoBehaviour
     public void SpawnObject()
     {
         // 원하는 위치에 오브젝트를 소환해봐.
-        Instantiate(objectToSpawn, new Vector3(15, 10, 56), Quaternion.identity);
-    }
+        if (GameManager.instance != null)
+        {
+            if (GameManager.instance.CanFBUpgrade())
+            {
+                Instantiate(objectToSpawn, new Vector3(15, 10, 56), Quaternion.identity);
+                GameManager.instance.DeductFBUpgradeCost();
+            }
+        }
 
-    
+        
+    }
 }
