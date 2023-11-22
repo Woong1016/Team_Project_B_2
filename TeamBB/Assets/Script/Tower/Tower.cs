@@ -8,11 +8,11 @@ public class Tower : MonoBehaviour
     public float bulletSpeed = 10f; // 탄환 속도
     public float fireRate = 1f;     // 발사 속도
     public Transform gunTransform;  // 포탑의 총구 위치
-    public float attackRange = 10f; // 포탑의 공격 사거리
-    public float rotationSpeed = 10f; // 포탑의 회전 속도
+    public float attackRange = 50f; // 포탑의 공격 사거리
+    public float rotationSpeed = 50f; // 포탑의 회전 속도
     public float baseDamage = 10f;   // 초기 공격력
     public float baseAttackSpeed = 1.0f; // 초기 공격 속도
-    private float nextFireTime;     // 다음 발사 시간
+    public float nextFireTime;     // 다음 발사 시간
     private Transform target;       // 현재 공격 대상
 
     void Update()

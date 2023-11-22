@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using TMPro;
 
 public class MonsterSpawner : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class MonsterSpawner : MonoBehaviour
     }
 
     public List<RoundInfo> rounds = new List<RoundInfo>();
+    public TMP_Text roundText;
+    public GameObject clearScreen; // 클리어 화면 GameObject
 
     private int currentRound = -1;
     private int objectsSpawned = 0;
@@ -20,6 +24,8 @@ public class MonsterSpawner : MonoBehaviour
 
     void Start()
     {
+        // 클리어 화면 비활성화 및 하위 객체 비활성화
+        SetClearScreenActive(false);
         NextRound();
     }
 
@@ -33,7 +39,6 @@ public class MonsterSpawner : MonoBehaviour
                 {
                     GameObject objectPrefab = rounds[currentRound].objectsToSpawn[objectsSpawned];
                     SpawnObject(objectPrefab);
-
                     objectsSpawned++;
                     nextSpawnTime = Time.time + rounds[currentRound].timeBetweenSpawns;
                 }
@@ -48,6 +53,11 @@ public class MonsterSpawner : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            // 모든 라운드가 끝났을 때 클리어 화면 활성화
+            SetClearScreenActive(true);
+        }
     }
 
     private void NextRound()
@@ -57,6 +67,7 @@ public class MonsterSpawner : MonoBehaviour
         {
             objectsSpawned = 0;
             nextSpawnTime = Time.time + rounds[currentRound].timeBetweenSpawns;
+            roundText.text = " " + (currentRound + 1);
         }
         else
         {
@@ -68,12 +79,16 @@ public class MonsterSpawner : MonoBehaviour
     {
         if (objectPrefab != null)
         {
-            // 원하는 스폰 위치와 방향을 설정하고 프리팹을 생성
-            Vector3 spawnPosition = new Vector3(0, 0, 0); // 원하는 위치로 변경
-            Quaternion spawnRotation = Quaternion.identity; // 원하는 방향으로 변경
-
+            Vector3 spawnPosition = new Vector3(0, 0, 0);
+            Quaternion spawnRotation = Quaternion.identity;
             GameObject spawnedObject = Instantiate(objectPrefab, spawnPosition, spawnRotation);
-            spawnedObject.tag = "SpawnedObject"; // 스포닌된 오브젝트에 태그 할당
+            spawnedObject.tag = "SpawnedObject";
         }
+    }
+
+    // 클리어 화면 및 하위 객체 활성화/비활성화를 처리하는 메서드
+    private void SetClearScreenActive(bool isActive)
+    {
+        clearScreen.SetActive(isActive);
     }
 }
