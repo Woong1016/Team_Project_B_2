@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public Transform Ing;
+    private Transform Ing;
     public float maxHealth = 50f; // 적의 최대 체력
     private float currentHealth;   // 현재 체력
 
