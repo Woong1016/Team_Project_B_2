@@ -10,7 +10,6 @@ TagManager:
   - SpawnedObject
   - "\uBD88\uB2ED"
   - EvolutionObject
-  - EnemyHpBar
   layers:
   - Default
   - TransparentFX
