@@ -13,7 +13,7 @@ public class ObjectController : MonoBehaviour
         {
             if (GameManager.instance.CanFBUpgrade())
             {
-                Instantiate(objectToSpawn, new Vector3(15, 10, 56), Quaternion.identity);
+                Instantiate(objectToSpawn, new Vector3(18, 14, 56), Quaternion.identity);
                 GameManager.instance.DeductFBUpgradeCost();
             }
         }

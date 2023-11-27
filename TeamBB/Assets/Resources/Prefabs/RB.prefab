@@ -123,9 +123,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8541929044888502084}
-  - component: {fileID: 8142998820313147501}
   - component: {fileID: 8142998820313147490}
   - component: {fileID: -4793272304249614968}
+  - component: {fileID: 8142998820313147501}
+  - component: {fileID: 5861194948116534918}
   m_Layer: 0
   m_Name: RB
   m_TagString: Untagged
@@ -150,19 +151,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8142998820313147501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9061479502594172414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000b389f412262f4fa5d23a6adcdf21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  evolvedTowerPrefab: {fileID: 9061479502594172414, guid: 24be0a23af6aa8d40abbfbbdc375efca, type: 3}
 --- !u!114 &8142998820313147490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,3 +186,29 @@ CapsuleCollider:
   m_Height: 4.168814
   m_Direction: 1
   m_Center: {x: 0, y: 0.46229988, z: 0.5115136}
+--- !u!114 &8142998820313147501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061479502594172414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000b389f412262f4fa5d23a6adcdf21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evolvedTowerPrefab: {fileID: 9061479502594172414, guid: 24be0a23af6aa8d40abbfbbdc375efca, type: 3}
+--- !u!114 &5861194948116534918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061479502594172414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67174fe10429354fb07f33f3925a9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evolvedTowerPrefab: {fileID: 4220352701410463934, guid: a8d553553b5853e4ca4719276b619727, type: 3}

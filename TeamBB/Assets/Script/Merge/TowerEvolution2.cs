@@ -1,15 +1,14 @@
 using UnityEngine;
 
-public class TowerEvolution : MonoBehaviour
+public class TowerEvolution2 : MonoBehaviour
 {
     public GameObject evolvedTowerPrefab; // 진화된 타워 프리팹
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("EvolutionObject")) // 진화를 일으키는 오브젝트의 태그를 사용해 충돌 감지
+        if (other.CompareTag("EvolutionObject2")) // 진화를 일으키는 오브젝트의 태그를 사용해 충돌 감지
         {
-            EvolveTower(); 
-               
+            EvolveTower();
         }
     }
 
