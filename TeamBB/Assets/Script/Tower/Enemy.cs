@@ -68,4 +68,13 @@ public class Enemy : MonoBehaviour
             Destroy(hpBar.gameObject);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // 충돌한 오브젝트의 태그가 "SpawnedObject"인지 확인합니다.
+        if (other.gameObject.CompareTag("End"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
