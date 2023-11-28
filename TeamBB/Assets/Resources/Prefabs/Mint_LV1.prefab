@@ -360,7 +360,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5319556033415741160, guid: 18bd2086e52b6a245a03b43c61602cb6, type: 3}
   bulletSpeed: 10
   fireRate: 1
-  gunTransform: {fileID: 0}
+  gunTransform: {fileID: 5592105446798040354}
   attackRange: 50
   rotationSpeed: 50
   baseDamage: 10
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: SpawneObject
-  slowDownFactor: 5
+  slowDownFactor: 10
 --- !u!1 &7701160364333087387
 GameObject:
   m_ObjectHideFlags: 0
