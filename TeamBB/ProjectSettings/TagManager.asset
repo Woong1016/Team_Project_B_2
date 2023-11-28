@@ -13,7 +13,6 @@ TagManager:
   - EnemyHpBar
   - EvolutionObject1
   - EvolutionObject2
-  - End
   layers:
   - Default
   - TransparentFX
