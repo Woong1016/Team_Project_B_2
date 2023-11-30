@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public Transform Ing;
+    private Transform Ing;
     public float maxHealth = 60f; // 적의 최대 체력
     private float currentHealth;   // 현재 체력
     private readonly float initHp = 60f;
@@ -59,7 +59,7 @@ public class Enemy : MonoBehaviour
     {
         GameManager.instance.MoneyIncrease(moneyValue);
 
-        Destroy(Ing.gameObject);
+        
         Destroy(gameObject);
 
         // hpBar가 null이 아닌 경우에만 파괴

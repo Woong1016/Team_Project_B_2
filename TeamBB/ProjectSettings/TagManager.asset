@@ -13,6 +13,8 @@ TagManager:
   - EvolutionObject1
   - EvolutionObject2
   - Mint
+  - Mint1
+  - Mint2
   layers:
   - Default
   - TransparentFX
