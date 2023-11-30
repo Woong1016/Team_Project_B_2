@@ -169,7 +169,7 @@ MonoBehaviour:
   gunTransform: {fileID: 8142998820937374867}
   attackRange: 20
   rotationSpeed: 300
-  baseDamage: 1
+  baseDamage: 15
   baseAttackSpeed: 1
   nextFireTime: 2
 --- !u!136 &-4793272304249614968

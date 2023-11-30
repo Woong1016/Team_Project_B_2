@@ -59,19 +59,20 @@ public class ObjectPathController : MonoBehaviour
         if (other.CompareTag("Mint"))
         {
             Debug.Log("민트 통과");
-            currentMovementSpeed = originalMovementSpeed * 2.0f; // 이동 속도를 1/8로 설정합니다.
+            currentMovementSpeed = 8.0f; // Mint 태그에 대한 이동 속도를 5.0으로 설정
         }
         else if (other.CompareTag("Mint1"))
         {
             Debug.Log("민트 통과1");
-            currentMovementSpeed = originalMovementSpeed * 0.1667f; // 이동 속도를 1/6로 설정합니다.
+            currentMovementSpeed = 6.0f; // Mint1 태그에 대한 이동 속도를 8.0으로 설정
         }
         else if (other.CompareTag("Mint2"))
         {
             Debug.Log("민트 통과2");
-            currentMovementSpeed = originalMovementSpeed * 0.25f; // 이동 속도를 1/4로 설정합니다.
+            currentMovementSpeed = 4.0f; // Mint2 태그에 대한 이동 속도를 10.0으로 설정
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
         // 충돌한 오브젝트가 특정 오브젝트에서 벗어나면 원래 이동 속도로 돌아감

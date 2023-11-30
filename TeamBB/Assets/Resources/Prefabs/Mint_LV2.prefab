@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 3763742607861149572}
   - component: {fileID: 5511143064699868951}
   m_Layer: 0
-  m_Name: Mint_LV1
+  m_Name: Mint_LV2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 6883055948010903683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.1, y: 3.6, z: 94.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1338854862141149069}
@@ -331,7 +331,7 @@ CapsuleCollider:
   m_Radius: 12.419883
   m_Height: 24.839766
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 1.3160639}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3763742607861149572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67174fe10429354fb07f33f3925a9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evolvedTowerPrefab: {fileID: 6883055948010903683, guid: f97aa11043978d3438ebe0440c0a2d40, type: 3}
+  evolvedTowerPrefab: {fileID: 6883055948010903683, guid: 51c247d2748939f4997e734c32e3e69b, type: 3}
 --- !u!114 &5511143064699868951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 414227173642351656}
   - component: {fileID: 7483080718654051082}
   m_Layer: 0
-  m_Name: Mint_LV1
+  m_Name: Mint_LV2
   m_TagString: Mint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,8 +391,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6937374419311987184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000082701, y: 8.9392, z: 0}
-  m_LocalScale: {x: 0.46142712, y: 0.26708326, z: 0.46142712}
+  m_LocalPosition: {x: -0.00000088289, y: 10.074, z: 0}
+  m_LocalScale: {x: 0.8452357, y: 0.30529025, z: 0.8452357}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1972887265336124944}
