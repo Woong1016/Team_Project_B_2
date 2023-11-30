@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 5511143064699868951}
   m_Layer: 0
   m_Name: Mint_LV1
-  m_TagString: Untagged
+  m_TagString: Mint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,10 +376,9 @@ GameObject:
   m_Component:
   - component: {fileID: 414227173642351656}
   - component: {fileID: 1548130791414241034}
-  - component: {fileID: 8538796447620093090}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Mint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,20 +411,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 46.934467, y: 1, z: 40.525192}
   m_Center: {x: 0.3570881, y: 0, z: 1.0368805}
---- !u!114 &8538796447620093090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6937374419311987184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e1da30ade021d74bb489c83594ffeb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: SpawneObject
-  slowDownFactor: 10
 --- !u!1 &7701160364333087387
 GameObject:
   m_ObjectHideFlags: 0

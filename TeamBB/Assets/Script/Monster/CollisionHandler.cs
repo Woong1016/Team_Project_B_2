@@ -16,5 +16,6 @@ public class CollisionHandler : MonoBehaviour
                
             Destroy(other.gameObject);
         }
+
     }
 }
