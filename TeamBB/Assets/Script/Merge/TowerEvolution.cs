@@ -8,7 +8,8 @@ public class TowerEvolution : MonoBehaviour
     {
         if (other.CompareTag("EvolutionObject")) // 진화를 일으키는 오브젝트의 태그를 사용해 충돌 감지
         {
-            EvolveTower();
+            EvolveTower(); 
+               
         }
     }
 

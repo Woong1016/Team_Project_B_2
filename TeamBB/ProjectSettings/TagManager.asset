@@ -8,8 +8,16 @@ TagManager:
   - Wall
   - Floor
   - SpawnedObject
-  - "\uBD88\uB2ED"
   - EvolutionObject
+  - EnemyHpBar
+  - EvolutionObject1
+  - EvolutionObject2
+  - Mint
+  - Mint1
+  - Mint2
+  - Nutella_LV1
+  - Nutella_LV2
+  - Nutella_LV3
   layers:
   - Default
   - TransparentFX
