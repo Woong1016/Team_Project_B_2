@@ -349,9 +349,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 150
+  currentHealth: 0
   hpBarCanvas: {fileID: 838180247}
   hpBar: {fileID: 1203843063}
   moneyValue: 50
+  damageAmountLV1: 15
+  damageAmountLV2: 25
+  damageAmountLV3: 40
 --- !u!1001 &4427836974314396258
 PrefabInstance:
   m_ObjectHideFlags: 0

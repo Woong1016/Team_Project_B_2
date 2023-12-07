@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3690598642398091069}
   - component: {fileID: 6233075666445595673}
   - component: {fileID: 7674486319680185437}
+  - component: {fileID: 1004496104662490492}
   m_Layer: 0
   m_Name: MintCHo
   m_TagString: EvolutionObject1
@@ -64,6 +65,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1004496104662490492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046884952878923600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2d4acc381591b4f8e82d0844a5c6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4344246108263882666
 GameObject:
   m_ObjectHideFlags: 0

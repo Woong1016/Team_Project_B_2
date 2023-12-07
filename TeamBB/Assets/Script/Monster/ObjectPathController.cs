@@ -59,17 +59,17 @@ public class ObjectPathController : MonoBehaviour
         if (other.CompareTag("Mint"))
         {
             Debug.Log("민트 통과");
-            currentMovementSpeed = 8.0f; // Mint 태그에 대한 이동 속도를 5.0으로 설정
+            currentMovementSpeed = 6.0f; // Mint 태그에 대한 이동 속도를 5.0으로 설정
         }
         else if (other.CompareTag("Mint1"))
         {
             Debug.Log("민트 통과1");
-            currentMovementSpeed = 6.0f; // Mint1 태그에 대한 이동 속도를 8.0으로 설정
+            currentMovementSpeed = 4.0f; // Mint1 태그에 대한 이동 속도를 8.0으로 설정
         }
         else if (other.CompareTag("Mint2"))
         {
             Debug.Log("민트 통과2");
-            currentMovementSpeed = 4.0f; // Mint2 태그에 대한 이동 속도를 10.0으로 설정
+            currentMovementSpeed = 2.0f; // Mint2 태그에 대한 이동 속도를 10.0으로 설정
         }
     }
 

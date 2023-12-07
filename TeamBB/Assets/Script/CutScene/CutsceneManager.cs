@@ -27,7 +27,7 @@ public class CutsceneManager : MonoBehaviour
             else
             {
                 // 모든 이미지가 표시되었을 때, 다음 씬(STAGE1) 로드
-                SceneManager.LoadScene("STAGE1");
+                SceneManager.LoadScene("STAGEMAIN");
             }
         }
     }

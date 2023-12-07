@@ -12,9 +12,30 @@ EditorBuildSettings:
     path: Assets/Scenes/STAGEMAIN.unity
     guid: 2058675c9de504440a60aa027b1da266
   - enabled: 1
-    path: Assets/Scenes/CUTSCENE1.unity
+    path: Assets/Scenes/CutToon/CUTSCENE1.unity
     guid: e0a7ee548c82e2945a7033e369e5f94f
   - enabled: 1
     path: Assets/Scenes/STAGE1.unity
     guid: b615afa312328fc42905cc9910999b58
+  - enabled: 1
+    path: Assets/Scenes/CutToon/ENDCUTSCENE1.unity
+    guid: b86348bf7455e264e9fff3de229a7202
+  - enabled: 1
+    path: Assets/Scenes/CutToon/CUTSCENE2.unity
+    guid: 5f8a30e883b5a4141b0400aed0c588cb
+  - enabled: 1
+    path: Assets/Scenes/CutToon/ENDCUTSCENE2.unity
+    guid: c4b1691181c10514c9af55e69b197d41
+  - enabled: 1
+    path: Assets/Scenes/CutToon/CUTSCENE3.unity
+    guid: c09280ca329a91642895a70959089def
+  - enabled: 1
+    path: Assets/Scenes/CutToon/ENDCUTSCENE3.unity
+    guid: a358d79abda74684bb21543fc4a37795
+  - enabled: 1
+    path: Assets/Scenes/STAGE2.unity
+    guid: 2bea00068f697cc4ab3183cc9d3040df
+  - enabled: 1
+    path: Assets/Scenes/STAGE3.unity
+    guid: 9a4d85664c3e8b541be31367909e9ba2
   m_configObjects: {}
