@@ -1914,9 +1914,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 2085875376278421684, guid: 2ebe36c056acde44e9ebc8c4f6b428bb, type: 3}
-  fbUpgradeCostText: {fileID: 0}
-  nbUpgradeCostText: {fileID: 0}
-  mbUpgradeCostText: {fileID: 0}
+  fbUpgradeCostText: {fileID: 329393046}
+  nbUpgradeCostText: {fileID: 1728419367}
+  mbUpgradeCostText: {fileID: 42250445}
 --- !u!1001 &253925191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2269,7 +2269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a26dc15992775545b8061801a2f5517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 1444089846366331409, guid: 915ad8b08f0942a439b22c8edd38bda8, type: 3}
+  objectToSpawn: {fileID: 3162479499559309511, guid: 403feec4508202140afec582e20ea00c, type: 3}
   fbUpgradeCostText: {fileID: 329393046}
   nbUpgradeCostText: {fileID: 42250445}
   mbUpgradeCostText: {fileID: 1728419367}
@@ -6718,9 +6718,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1046884952878923600, guid: 6260bd34ffd9de7448d17b9c99dea2c8, type: 3}
-  fbUpgradeCostText: {fileID: 0}
-  nbUpgradeCostText: {fileID: 0}
-  mbUpgradeCostText: {fileID: 0}
+  fbUpgradeCostText: {fileID: 329393046}
+  nbUpgradeCostText: {fileID: 1728419367}
+  mbUpgradeCostText: {fileID: 42250445}
 --- !u!1 &1192320828
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,8 +10860,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBBFC\uCD08 \uBD95\uC5B4\uBE75\n-2\uC2A4\uD14C\uC774\uC9C0\uBD80\uD130
-    \uC0AC\uC6A9\uAC00\uB2A5-"
+  m_text: "\uD2B9\uC218\uB2A5\uB825:\n \uADFC\uCC98\uC5D0 \uC788\uB294 \uC801\uC744
+    \uB9E4\uC6B0 \uB290\uB9AC\uAC8C \uD574\uC900\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 634c6318305a2144f8af67694f6fc54d, type: 2}
   m_sharedMaterial: {fileID: 7873691118949674296, guid: 634c6318305a2144f8af67694f6fc54d, type: 2}

@@ -352,7 +352,7 @@ MonoBehaviour:
   currentHealth: 0
   hpBarCanvas: {fileID: 838180247}
   hpBar: {fileID: 1203843063}
-  moneyValue: 50
+  moneyValue: 10000
   damageAmountLV1: 15
   damageAmountLV2: 25
   damageAmountLV3: 40
