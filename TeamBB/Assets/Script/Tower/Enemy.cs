@@ -14,6 +14,11 @@ public class Enemy : MonoBehaviour
     public Image hpBar;
     public int moneyValue = 10;
 
+    // 추가 변수: 데미지 감소 정도
+    public float level1DamageMultiplier = 1f;
+    public float level2DamageMultiplier = 3f;
+    public float level3DamageMultiplier = 5f;
+
     void Start()
     {
         Ing = gameObject.transform.parent;
@@ -24,6 +29,20 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        // 추가: 레벨에 따른 데미지 감소 적용
+        if (gameObject.CompareTag("Nutella_LV1"))
+        {
+            damage *= level1DamageMultiplier;
+        }
+        else if (gameObject.CompareTag("Nutella_LV2"))
+        {
+            damage *= level2DamageMultiplier;
+        }
+        else if (gameObject.CompareTag("Nutella_LV3"))
+        {
+            damage *= level3DamageMultiplier;
+        }
+
         currentHealth -= damage;
         DisplayHealth();
 
@@ -31,6 +50,32 @@ public class Enemy : MonoBehaviour
         {
             Die();
         }
+    }
+
+    void Update()
+    {
+        // ... (이전 코드는 그대로 유지)
+
+        void Update()
+        {
+            // 추가: Nutella 태그를 가진 오브젝트인 경우에만 초마다 Hp 감소
+            if (
+                gameObject.CompareTag("Nutella_LV1") ||
+                gameObject.CompareTag("Nutella_LV2") ||
+                gameObject.CompareTag("Nutella_LV3"))
+            {
+                currentHealth -= Time.deltaTime;
+                DisplayHealth();
+
+                if (currentHealth <= 0)
+                {
+                    Die();
+                }
+            }
+        }
+
+        // ... (이후 코드는 그대로 유지)
+
     }
 
     void DisplayHealth()
@@ -59,7 +104,6 @@ public class Enemy : MonoBehaviour
     {
         GameManager.instance.MoneyIncrease(moneyValue);
 
-        
         Destroy(gameObject);
 
         // hpBar가 null이 아닌 경우에만 파괴

@@ -154,7 +154,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e600cff443fd3d41bd52cc48fab6a71, type: 3}
   m_PrefabInstance: {fileID: 1167537637293194725}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &4933562440099828752
+--- !u!54 &-7140678143287128862
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,7 +184,7 @@ CapsuleCollider:
   m_Height: 1.9222299
   m_Direction: 1
   m_Center: {x: 0, y: 0.7, z: -0.20240399}
---- !u!114 &3623950842181219746
+--- !u!114 &2550096681568076422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

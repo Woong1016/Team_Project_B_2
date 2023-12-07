@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: -4793272304249614968}
   - component: {fileID: 8142998820313147501}
   - component: {fileID: 5861194948116534918}
+  - component: {fileID: 5391641781900199803}
   m_Layer: 0
   m_Name: RB
   m_TagString: Untagged
@@ -212,3 +213,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evolvedTowerPrefab: {fileID: 6883055948010903683, guid: 2e732356512c6344ea5a7925f0fc3cbf, type: 3}
+--- !u!114 &5391641781900199803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061479502594172414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a446c252b273e48963e3ac54c54deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evolvedTowerPrefab: {fileID: 478748800395543899, guid: 1cbc62334b37c0f4daf171b83fac04e8, type: 3}
