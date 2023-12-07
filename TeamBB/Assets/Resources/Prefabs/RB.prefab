@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8142998820937374866}
   m_LocalRotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.53589, y: 0.13143556, z: 5.464262}
+  m_LocalPosition: {x: 0.033, y: -0.049, z: -1.41}
   m_LocalScale: {x: 98.092606, y: 98.092606, z: 98.092606}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: -4793272304249614968}
   - component: {fileID: 8142998820313147501}
   - component: {fileID: 5861194948116534918}
+  - component: {fileID: 765866913205522983}
   m_Layer: 0
   m_Name: RB
   m_TagString: Untagged
@@ -212,3 +213,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evolvedTowerPrefab: {fileID: 6883055948010903683, guid: 2e732356512c6344ea5a7925f0fc3cbf, type: 3}
+--- !u!114 &765866913205522983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061479502594172414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a446c252b273e48963e3ac54c54deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evolvedTowerPrefab: {fileID: 6397863592534132589, guid: 95c05d161095c0b4aa084e636b03b0d4, type: 3}

@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     private Transform Ing;
     public float maxHealth = 60f; // 적의 최대 체력
-    private float currentHealth;   // 현재 체력
+    public float currentHealth;   // 현재 체력
     private readonly float initHp = 60f;
 
     public Canvas hpBarCanvas; // HPBar Canvas
@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         Ing = gameObject.transform.parent;
-        currentHealth = initHp;
+        currentHealth = maxHealth;
 
         DisplayHealth();
     }
