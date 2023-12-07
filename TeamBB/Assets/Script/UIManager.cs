@@ -14,7 +14,9 @@ public class UIManager : MonoBehaviour
     public TMP_Text attackDamageUpgradeCostText;       // 공격력 비용 텍스트
     public TMP_Text attackSpeedText;        // 공격 속도 텍스트
     public TMP_Text attackSpeedUpgradeCostText;        // 공격 속도 비용 텍스트
-    public TMP_Text fbUpgradeCostText;        // 불닭 비용 텍스트
+    //public TMP_Text fbUpgradeCostText;        // 불닭 비용 텍스트
+    //public TMP_Text nbUpgradeCostText;
+    //public TMP_Text mbUpgradeCostText;
 
 
     private bool isShopPanelActive = false;
@@ -119,6 +121,8 @@ public class UIManager : MonoBehaviour
         attackDamageText.text = "" + GameManager.instance.GetAttackDamage();
         attackDamageUpgradeCostText.text = "" + GameManager.instance.GetAttackDamageUpgradeCost();
 
-        fbUpgradeCostText.text = "" + GameManager.instance.GetFBUpgradeCost();
+        //fbUpgradeCostText.text = "" + GameManager.instance.GetFBUpgradeCost();
+        //nbUpgradeCostText.text = "" + GameManager.instance.GetNBUpgradeCost();
+        //mbUpgradeCostText.text = "" + GameManager.instance.GetMBUpgradeCost();
     }
 }
